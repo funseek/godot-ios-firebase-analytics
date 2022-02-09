@@ -4,7 +4,7 @@ Firebase Analytics iOS Plugin for Godot
 ## Instructions
 Clone this repository and it's submodules:
 ```
-git clone --recurse-submodules git@github.com:funseek/godot-ios-request-review.git
+git clone --recurse-submodules git@github.com:funseek/godot-ios-firebase-analytics.git
 ```
 
 To generate Godot headers you need to run compilation command inside godot submodule directory.   
