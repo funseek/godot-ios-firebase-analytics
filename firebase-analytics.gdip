@@ -1,0 +1,15 @@
+[config]
+name="FirebaseAnalytics"
+binary="firebase-analytics/bin/firebase-analytics.a"
+initialization="godot_firebase_analytics_init"
+deinitialization="godot_firebase_analytics_deinit"
+
+[dependencies]
+
+linked=[
+]
+embedded=[]
+system=[]
+capabilities=[]
+files=[]
+[plist]
