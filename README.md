@@ -2,6 +2,7 @@
 Firebase Analytics iOS Plugin for Godot
 
 ## Instructions
+### Building library and copy them to Godot Project
 Clone this repository and it's submodules:
 ```
 git clone --recurse-submodules git@github.com:funseek/godot-ios-firebase-analytics.git
@@ -11,6 +12,11 @@ To generate Godot headers you need to run compilation command inside godot submo
 Example:
 ```
 ./scripts/generate_headers.sh
+```
+
+run pod install. [CocoaPods](https://cocoapods.org/)
+```
+pod install
 ```
 
 Building a .a library
@@ -24,8 +30,8 @@ cp bin/release/firebase-analytics/firebase-analytics.*.a $GODOT_HOME/ios/plugins
 cp firebase-analytics.gdip $GODOT_HOME/ios/plugins/
 ```
 
-Export iOS project by Godot and you need to use CocoaPods in Xcode.[CocoaPods](https://cocoapods.org/)
-Add the following to your Podfile if it does not exist, create a new one.
+### Export iOS project and edit Xcode project
+Export iOS project by Godot. then you need to use CocoaPods in Xcode. Add the following to your Podfile if it does not exist, create a new one.
 ```
 pod 'Firebase/Analytics'
 ```
