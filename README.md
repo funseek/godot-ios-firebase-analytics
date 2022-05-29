@@ -45,5 +45,16 @@ Finaly, Your GoogleService-Info.plist to Xcode.
 <img width="821" alt="Screen Shot 2022-05-03 at 8 46 16" src="https://user-images.githubusercontent.com/545241/166343525-1ab9bb41-863e-47f3-a239-81319cda224a.png">
 
 
+### How to use it with GDScript
+Method to initialize Firebase.
+* configure()
+
+
+Calling plugin in Godot
+```gdscript
+if Engine.has_singleton("FirebaseAnalytics"):
+		var firebase = Engine.get_singleton("FirebaseAnalytics")
+		firebase.configure()
+```
 ## License
 MIT

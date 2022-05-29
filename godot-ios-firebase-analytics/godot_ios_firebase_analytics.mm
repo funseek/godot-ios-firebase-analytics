@@ -8,13 +8,20 @@
 #import "godot_ios_firebase_analytics.h"
 
 #import <Foundation/Foundation.h>
-#import <FirebaseCore/FIRApp.h>
+#import "firebase_analytics.h"
+#import "core/engine.h"
+
+FirebaseAnalytics *plugin;
 
 void godot_firebase_analytics_init() {
     NSLog(@"init FirebaseAnalytics plugin");
-    [FIRApp configure];
+    plugin = memnew(FirebaseAnalytics);
+    Engine::get_singleton()->add_singleton(Engine::Singleton("FirebaseAnalytics", plugin));
 }
 
 void godot_firebase_analytics_deinit() {
     NSLog(@"deinit FirebaseAnalytics plugin");
+    if (plugin) {
+       memdelete(plugin);
+   }
 }

@@ -17,7 +17,7 @@ class FirebaseAnalytics : public Object {
     
 public:
     
-    void dummy();
+    void configure();
     
     FirebaseAnalytics();
     ~FirebaseAnalytics();
