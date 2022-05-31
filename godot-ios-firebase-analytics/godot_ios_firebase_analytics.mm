@@ -11,17 +11,17 @@
 #import "firebase_analytics.h"
 #import "core/engine.h"
 
-FirebaseAnalytics *plugin;
+FirebaseAnalytics *firebase_analytics_plugin;
 
 void godot_firebase_analytics_init() {
     NSLog(@"init FirebaseAnalytics plugin");
-    plugin = memnew(FirebaseAnalytics);
-    Engine::get_singleton()->add_singleton(Engine::Singleton("FirebaseAnalytics", plugin));
+    firebase_analytics_plugin = memnew(FirebaseAnalytics);
+    Engine::get_singleton()->add_singleton(Engine::Singleton("FirebaseAnalytics", firebase_analytics_plugin));
 }
 
 void godot_firebase_analytics_deinit() {
     NSLog(@"deinit FirebaseAnalytics plugin");
-    if (plugin) {
-       memdelete(plugin);
+    if (firebase_analytics_plugin) {
+       memdelete(firebase_analytics_plugin);
    }
 }
