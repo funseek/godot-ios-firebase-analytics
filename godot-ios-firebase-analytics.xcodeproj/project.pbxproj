@@ -305,17 +305,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X62PMQJAR;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/godot/main",
 					"$(SRCROOT)/godot",
-					"$(SRCROOT)/godot/trirdparty",
-					"$(SRCROOT)/godot/drivers",
-					"$(SRCROOT)/godot/scene",
-					"$(SRCROOT)/godot/modules",
 					"$(SRCROOT)/godot/platform/iphone",
-					"$(SRCROOT)/godot/core",
-					"$(SRCROOT)/godot/platform",
-					"$(SRCROOT)/godot/servers",
-					"$(SRCROOT)/godot/core/os",
 					"$(SRCROOT)/Pods/Headers/Public",
 					"$(SRCROOT)/Pods",
 				);
@@ -343,17 +334,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X62PMQJAR;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/godot/main",
 					"$(SRCROOT)/godot",
-					"$(SRCROOT)/godot/trirdparty",
-					"$(SRCROOT)/godot/drivers",
-					"$(SRCROOT)/godot/scene",
-					"$(SRCROOT)/godot/modules",
 					"$(SRCROOT)/godot/platform/iphone",
-					"$(SRCROOT)/godot/core",
-					"$(SRCROOT)/godot/platform",
-					"$(SRCROOT)/godot/servers",
-					"$(SRCROOT)/godot/core/os",
 					"$(SRCROOT)/Pods/Headers/Public",
 					"$(SRCROOT)/Pods",
 				);

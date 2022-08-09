@@ -25,7 +25,7 @@ opts.Add(BoolVariable('simulator', "Compilation platform", 'no'))
 opts.Add(BoolVariable('use_llvm', "Use the LLVM / Clang compiler", 'no'))
 opts.Add('plugin', 'Resulting file name.', '')
 opts.Add(PathVariable('target_path', 'The path where the lib is installed.', 'bin/'))
-opts.Add(EnumVariable('version', 'Godot version to target', '', ['', '3.4', '4.0']))
+opts.Add(EnumVariable('version', 'Godot version to target', '', ['', '3.5', '4.0']))
 
 # Updates the environment with the option variables.
 opts.Update(env)
@@ -93,7 +93,7 @@ env.Append(LINKFLAGS=["-arch", env['arch'], '-isysroot', sdk_path, '-F' + sdk_pa
 if env['arch'] == 'armv7':
     env.Prepend(CXXFLAGS=['-fno-aligned-allocation'])
 
-if env['version'] == '3.4':
+if env['version'] == '3.5':
     env.Prepend(CFLAGS=['-std=gnu11'])
     env.Prepend(CXXFLAGS=['-DGLES_ENABLED', '-std=gnu++14'])
 
@@ -155,16 +155,7 @@ else:
 env.Append(CPPPATH=[
     '.', 
     'godot', 
-    'godot/main', 
-    'godot/core', 
-    'godot/core/os', 
-    'godot/core/platform',
     'godot/platform/iphone',
-    'godot/modules',
-    'godot/scene',
-    'godot/servers',
-    'godot/drivers',
-    'godot/thirdparty',
     'Pods/FirebaseCore/FirebaseCore/Sources/Public',
     'Pods/FirebaseCore/Interop/CoreDiagnostics/Public',
     'Pods/GoogleDataTransport/GoogleDataTransport/GDTCCTLibrary/Public',
